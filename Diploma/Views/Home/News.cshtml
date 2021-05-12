@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Diploma.Models.News>
+
+<h1 class="featurette-heading text-center m-3">Новости факультета</h1>
+<br />
+<br />
+@foreach (var item in Model)
+{
+    <hr class="featurette-divider">
+
+    <div class="row featurette p-5">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">@item.Name</h2>
+            <p class="lead">@item.Description</p>
+        </div>
+        <div class="col-md-5">            
+            <img alt="News Image" src="@item.Url" width="500" height="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" />
+        </div>
+    </div>
+
+    
+}

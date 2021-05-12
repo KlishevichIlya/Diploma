@@ -1,5 +1,3 @@
-using System;
-
 namespace Diploma.Models
 {
     public class ErrorViewModel

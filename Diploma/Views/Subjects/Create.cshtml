@@ -1,0 +1,45 @@
+﻿@model Diploma.Models.Subject
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Subject</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Actual" class="control-label"></label>
+                <input asp-for="Actual" class="form-control" />
+                <span asp-validation-for="Actual" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Learn" class="control-label"></label>
+                <input asp-for="Learn" class="form-control" />
+                <span asp-validation-for="Learn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Next" class="control-label"></label>
+                <input asp-for="Next" class="form-control" />
+                <span asp-validation-for="Next" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
